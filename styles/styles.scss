@@ -1,0 +1,54 @@
+@import 'homedepot';
+
+
+body {
+	font-family: $bodyfont;
+	justify-content: center;
+	display: flex;
+	
+
+	.currencyconverter {
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		padding-left: 40px;
+		width: 35%;
+
+		.currency_header {
+			color: orange;
+			margin-bottom: 10px;
+			margin-top: 15px;
+		}
+
+		.currency-title {
+			color: orange;
+			font-family: $bodyfont;
+			margin-bottom: 10px;
+		}
+
+	
+
+
+		input[type='number'] {
+			color: $darkfont;
+			font-family: $bodyfont;
+			font-size: 0.8rem;
+		}
+
+		.hdcc__starting-currency-container {
+			padding-bottom: 10px;
+		}
+
+		.hdcc__disclaimer-copy {
+			display: flex;
+			font-family: $bodyfont;
+			justify-content: flex-end;
+			padding: 15px 15px 15px 0px;
+			text-decoration: underline;
+		}
+
+
+/* End Styles */
+
+	}
+}

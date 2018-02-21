@@ -1,34 +1,41 @@
 <!DOCTYPE html>
-<html lang="en" data-ng-app="currencyCalculator" data-ng-strictdi>
-
+<html lang="en">
 <head>
-    <meta name="description" content="Currency Calculator">
+	<meta charset="UTF-8">
+	<title>Home Depot Test</title>
+	 <meta name="description" content="Currency Converter">
     <meta name="author" content="Vinisha D'Souza'">
-    <script type="text/javascript" src="./getRates.js"></script>
-    <title>Home Depot- Currency Converter</title>
+    <script type="text/javascript" src="./scripts/getRates.js"></script>
+	<link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <div>
-        <h2>Home Depot-Currency Converter</h2>
-        <p>Type in amount and select currency:</p>
-        <input type="number" placeholder="0.00" id="input" onkeyup="onSelect()">
-        <select id="first" onchange="onSelect()">
-            <option value="CAD" >CAD</option>
-            <option value="USD" >USD</option>
-            <option value="EUR">EUR</option>
-            </select>
-        <p>Converted amount:</p>
-        <input type="number" id="converted" disabled="">
-        <select id="second" onchange="onSelect()" >
-            <option value="CAD">CAD</option>
-            <option value="USD">USD</option>
-            <option value="EUR">EUR</option>
-            </select>
-            </div>
-    <a href="https://api.fixer.io/latest">Disclaimer</a>
+	<section class="currencyconverter">
+		<h3 class="currency_header" style="color:darkorange;" >Currency Converter</h3>
+		<div class="input-currency-container">
+			<p class="currency-title" style="color:darkorange;">Type in amount and select currency:</p>
+			<form action="">
+				<input type="number" placeholder="0.00" id='input' onkeyup="onSelect()">
+				<select id="first" onchange="onSelect()">
+					<option value="CAD">CAD</option>
+					<option value="USD">USD</option>
+					<option value="EUR">EUR</option>
+				</select>
+			</form>
+		</div>
+		<div class="output-currency-container">
+			<p class="currency-title" style="color:darkorange;">Converted Amount:</p>
+			<form action="">
+				<input type="number" placeholder="same value as above" id= 'converted'>
+				<select id="second" onchange="onSelect()">
+					<option value="CAD">CAD</option>
+					<option value="USD">USD</option>
+					<option value="EUR">EUR</option>
+				</select>
+			</form>
+		</div>
+		<a href="#" class="hdcc__disclaimer-copy">
+			Disclaimer
+		</a>
+	</section>	
 </body>
 </html>
-
-
- 
-
