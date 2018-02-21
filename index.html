@@ -1,79 +1,34 @@
 <!DOCTYPE html>
 <html lang="en" data-ng-app="currencyCalculator" data-ng-strictdi>
-<head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
+<head>
     <meta name="description" content="Currency Calculator">
     <meta name="author" content="Vinisha D'Souza'">
-
-    <title>Currency Converter Test</title>
+    <script type="text/javascript" src="./getRates.js"></script>
+    <title>Home Depot- Currency Converter</title>
 </head>
 <body>
-
-<div class="wrapper" data-ng-controller="CurrencyCtrl" role="main">
-    <div class="converter" aria-labelledby="CurrencyConverterForm">
-
-        <h2>Currency Converter</h2>
-
-        <form name="ccForm" role="form">
-
-            <div class="converter-form converter-form_input">
-
-                <p>
-                    <label for="f-inputAmount">Amount to convert:</label>
-                </p>
-
-                <div class="converter-form_groups">
-
-                    <input type="number" min="0.01" step="0.01" id="f-inputAmount" placeholder="Amount" role="textbox"
-                           data-ng-model="formObj.fromAmount" data-ng-change="update()">
-
-                    <label class="hidden" id="fl-inputCurrency" for="f-inputCurrency">Select original currency:</label>
-
-                    <select id="f-inputCurrency" role="listbox" aria-labelledby="fl-inputCurrency"
-                            data-ng-model="formObj.fromCur" data-ng-change="update()">
-                        <option value="CAD">CAD</option>
-                        <option value="USD">USD</option>
-                        <option value="EUR">EUR</option>
-                    </select>
-
-                </div>
+    <div>
+        <h2>Home Depot-Currency Converter</h2>
+        <p>Type in amount and select currency:</p>
+        <input type="number" placeholder="0.00" id="input">
+        <select id="first">
+            <option value="CAD">CAD</option>
+            <option value="USD">USD</option>
+            <option value="EUR">EUR</option>
+            </select>
+        <p>Converted amount:</p>
+        <input type="number" placeholder="0.00" id="converted" disabled="">
+        <select id="second">
+            <option value="CAD">CAD</option>
+            <option value="USD">USD</option>
+            <option value="EUR">EUR</option>
+            </select>
             </div>
-
-
-            <div class="converter-form converter-form_output">
-                <p>
-                    <label for="f-outputAmount">Converted amount:</label>
-                </p>
-                <div class="converter-form_groups">
-
-                    <input type="text" disabled="disabled" id="f-outputAmount" placeholder="0.00" role="textbox"
-                           data-ng-model="formObj.toAmount">
-
-                    <label class="hidden" id="fl-outputCurrency" for="f-outputCurrency">Select converted currency:</label>
-
-                    <select id="f-outputCurrency" role="listbox" aria-labelledby="fl-outputCurrency"
-                            data-ng-model="formObj.toCur" data-ng-change="update()">
-                        <option value="CAD">CAD</option>
-                        <option value="USD">USD</option>
-                        <option value="EUR">EUR</option>
-                    </select>
-                </div>
-            </div>
-
-        </form>
-
-
-      
-    <div class="modal-overlay" aria-hidden="true"></div>
-</div>
-
-</div>
-
-<script src="js/jslib.js"></script>
-<script src="js/jsapp.js"></script>
-
+    <a href="https://api.fixer.io/latest">Disclaimer</a>
 </body>
 </html>
+
+
+ 
+
