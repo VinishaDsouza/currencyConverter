@@ -11,15 +11,15 @@
     <div>
         <h2>Home Depot-Currency Converter</h2>
         <p>Type in amount and select currency:</p>
-        <input type="number" placeholder="0.00" id="input" onkeyup="myFunction()">
-        <select id="first">
-            <option value="CAD">CAD</option>
-            <option value="USD">USD</option>
+        <input type="number" placeholder="0.00" id="input" onkeyup="onSelect()">
+        <select id="first" onchange="onSelect()">
+            <option value="CAD" >CAD</option>
+            <option value="USD" >USD</option>
             <option value="EUR">EUR</option>
             </select>
         <p>Converted amount:</p>
-        <input type="number" placeholder="0.00" id="converted" disabled="">
-        <select id="second">
+        <input type="number" id="converted" disabled="">
+        <select id="second" onchange="onSelect()" >
             <option value="CAD">CAD</option>
             <option value="USD">USD</option>
             <option value="EUR">EUR</option>

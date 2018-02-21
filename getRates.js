@@ -1,4 +1,5 @@
-function myFunction(){
+
+function onSelect(){
 				//API Call based on the selected currencies
 				fetch(`https://api.fixer.io/latest?base=${first.value}&symbols=${second.value}`)
 				.then(res => res.json())// convert to json object
@@ -9,12 +10,15 @@ function myFunction(){
 					if (rate == false) {
 						converted.value = input.value;
 					}else{
-						converted.value = (rate * input.value).toFixed(3);
+						converted.value = (rate * input.value).toFixed(2);
 					}
 				})
 				.catch(err => { throw err });
 			
 }
+
+
+
 	
 
 
