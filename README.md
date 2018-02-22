@@ -4,7 +4,12 @@
 -You can run the app on this link :)
 [https://vinishadsouza.github.io/currencyConverter/](https://vinishadsouza.github.io/currencyConverter/)
 
--To Do:
-I recognize there is code repetition in my index.html file, my next step is to modularize the code base, possibly creating a template
-I also think I should make my app mobile friendly and write unit tests 
+# To Do:
+-I recognize there is code repetition in my index.html file, 
+-My next step is to modularize the code base, possibly creating a template
+-I also think I should make my app mobile friendly and write unit tests 
+
+Suggestions to improve app
+-add in more rates
+
 
