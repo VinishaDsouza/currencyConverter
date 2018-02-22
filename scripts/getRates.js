@@ -7,7 +7,7 @@ function onSelect(){
 					input.value.replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/"/g, '&quot;');
 					let rate = out.rates[Object.keys(out.rates)[0]];
 					//Rate does not exist if Base and Symbol is the same
-					if (rate == false) {
+					if (isNaN(rate)) {
 						converted.value = input.value;
 					}else{
 						converted.value = (rate * input.value).toFixed(2);
@@ -16,6 +16,8 @@ function onSelect(){
 				.catch(err => { throw err });
 			
 }
+
+
 
 
 

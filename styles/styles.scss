@@ -1,18 +1,17 @@
-@import 'homedepot';
-
+@import 'global';
 
 body {
-	font-family: $bodyfont;
-	justify-content: center;
 	display: flex;
-	
+	font-family: Verdana, Geneva, Tahoma, sans-serif;
+	justify-content: center;
 
 	.currencyconverter {
+		border: 1.5px solid $colour;
 		display: flex;
 		flex-direction: column;
 		justify-content: center;
 		padding-left: 40px;
-		width: 35%;
+		width: 25%;
 
 		.currency_header {
 			color: orange;
@@ -22,16 +21,19 @@ body {
 
 		.currency-title {
 			color: orange;
-			font-family: $bodyfont;
+			font-family: Verdana, Geneva, Tahoma, sans-serif;
 			margin-bottom: 10px;
 		}
 
-	
+		input,
+		select {
+			padding: 5px 10px 5px 5px;
+		}
 
 
 		input[type='number'] {
-			color: $darkfont;
-			font-family: $bodyfont;
+			color: $greycolor;
+			font-family: Verdana, Geneva, Tahoma, sans-serif;
 			font-size: 0.8rem;
 		}
 
@@ -41,7 +43,7 @@ body {
 
 		.hdcc__disclaimer-copy {
 			display: flex;
-			font-family: $bodyfont;
+			font-family: Verdana, Geneva, Tahoma, sans-serif;
 			justify-content: flex-end;
 			padding: 15px 15px 15px 0px;
 			text-decoration: underline;
