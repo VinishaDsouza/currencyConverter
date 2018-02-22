@@ -6,11 +6,11 @@ body {
 	justify-content: center;
 
 	.currencyconverter {
-		border: 3.5px solid $colour;
+		border: 1.5px solid $colour;
 		display: flex;
 		flex-direction: column;
 		justify-content: center;
-		padding-left: 40px;
+		padding-left: 30px;
 		width: 25%;
 
 		.currency_header {
@@ -30,6 +30,11 @@ body {
 			padding: 5px 10px 5px 5px;
 		}
 
+		select {
+			height: 28px;
+			background-color: white;
+		}
+
 
 		input[type='number'] {
 			color: $greycolor;
@@ -37,15 +42,13 @@ body {
 			font-size: 0.8rem;
 		}
 
-		.hdcc__starting-currency-container {
-			padding-bottom: 10px;
-		}
 
-		.hdcc__disclaimer-copy {
-			//display: flex;
+		.disclaimer{
+			color:$greycolor;
+			display: flex;
 			font-family: Verdana, Geneva, Tahoma, sans-serif;
 			justify-content: flex-end;
-			padding: 15px 15px 15px 15px;
+			padding: 35px 35px 35px 0px;
 			text-decoration: underline;
 		}
 
