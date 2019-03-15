@@ -1,7 +1,7 @@
 
 function onSelect(){
 				//API Call based on the selected currencies
-				fetch(`http://data.fixer.io/api/latest?access_key=e6e9e12159406c5476fe0ffbd8082f40&format=1`)
+				fetch(`http://data.fixer.io/api/latest?access_key=e6e9e12159406c5476fe0ffbd8082f40`)
 				.then(res => res.json())// convert to json object
 				.then((out) => { 
 					input.value.replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/"/g, '&quot;');
