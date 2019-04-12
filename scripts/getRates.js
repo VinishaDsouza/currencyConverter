@@ -9,7 +9,7 @@ function onSelect(){
 				fetch(uri)
 				.then(res => res.json())// convert to json object
 				.then((out) => { 
-					input.value.replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/"/g, '&quot;');
+					//input.value.replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/"/g, '&quot;');
 					//console.log(input.value);
 					let rate = out.rates[b];
 					console.log(rate);
